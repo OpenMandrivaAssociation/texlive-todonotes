@@ -1,12 +1,12 @@
-# revision 24362
+# revision 27159
 # category Package
 # catalog-ctan /macros/latex/contrib/todonotes
-# catalog-date 2011-04-21 10:56:14 +0200
+# catalog-date 2012-07-25 10:56:43 +0200
 # catalog-license lppl
-# catalog-version 0.9.8
+# catalog-version undef
 Name:		texlive-todonotes
-Version:	0.9.8
-Release:	2
+Version:	20120725
+Release:	1
 Summary:	Marking things to do in a LaTeX document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/todonotes
