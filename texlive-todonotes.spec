@@ -52,3 +52,20 @@ to enable customization/finetuning of the visual appearance.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120725-1
++ Revision: 813110
+- Update to latest release.
+
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.9.8-2
++ Revision: 757004
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.9.8-1
++ Revision: 719776
+- texlive-todonotes
+- texlive-todonotes
+- texlive-todonotes
+
