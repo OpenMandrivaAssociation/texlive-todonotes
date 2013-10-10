@@ -1,11 +1,11 @@
-# revision 27159
+# revision 28362
 # category Package
 # catalog-ctan /macros/latex/contrib/todonotes
-# catalog-date 2012-07-25 10:56:43 +0200
+# catalog-date 2012-11-25 12:17:34 +0100
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-todonotes
-Version:	20120725
+Version:	20121125
 Release:	1
 Summary:	Marking things to do in a LaTeX document
 Group:		Publishing
@@ -52,20 +52,3 @@ to enable customization/finetuning of the visual appearance.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120725-1
-+ Revision: 813110
-- Update to latest release.
-
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.9.8-2
-+ Revision: 757004
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.9.8-1
-+ Revision: 719776
-- texlive-todonotes
-- texlive-todonotes
-- texlive-todonotes
-
