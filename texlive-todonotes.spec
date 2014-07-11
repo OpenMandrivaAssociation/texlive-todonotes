@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-todonotes
 Version:	20121125
-Release:	6
+Release:	7
 Summary:	Marking things to do in a LaTeX document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/todonotes
