@@ -1,12 +1,6 @@
-# revision 28362
-# category Package
-# catalog-ctan /macros/latex/contrib/todonotes
-# catalog-date 2012-11-25 12:17:34 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-todonotes
-Version:	20121125
-Release:	9
+Version:	1.0.5
+Release:	1
 Summary:	Marking things to do in a LaTeX document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/todonotes
@@ -34,14 +28,10 @@ to enable customization/finetuning of the visual appearance.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/todonotes/todonotes.sty
-%doc %{_texmfdistdir}/doc/latex/todonotes/README
-%doc %{_texmfdistdir}/doc/latex/todonotes/todonotes.pdf
-%doc %{_texmfdistdir}/doc/latex/todonotes/todonotesexample.pdf
-%doc %{_texmfdistdir}/doc/latex/todonotes/todonotesexample.tex
+%{_texmfdistdir}/tex/latex/todonotes
+%doc %{_texmfdistdir}/doc/latex/todonotes
 #- source
-%doc %{_texmfdistdir}/source/latex/todonotes/todonotes.dtx
-%doc %{_texmfdistdir}/source/latex/todonotes/todonotes.ins
+%doc %{_texmfdistdir}/source/latex/todonotes
 
 #-----------------------------------------------------------------------
 %prep
