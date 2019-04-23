@@ -1,6 +1,6 @@
 Name:		texlive-todonotes
-Version:	1.0.7
-Release:	2
+Version:	1.1.2
+Release:	1
 Summary:	Marking things to do in a LaTeX document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/todonotes
