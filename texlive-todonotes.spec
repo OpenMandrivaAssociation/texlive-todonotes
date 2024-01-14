@@ -1,5 +1,5 @@
 Name:		texlive-todonotes
-Version:	65699
+Version:	69319
 Release:	1
 Summary:	Marking things to do in a LaTeX document
 Group:		Publishing
