@@ -3,7 +3,7 @@ Version:	69319
 Release:	1
 Summary:	Marking things to do in a LaTeX document
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/todonotes
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/todonotes
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/todonotes.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/todonotes.doc.r%{version}.tar.xz
