@@ -1,45 +1,27 @@
-Name:		texlive-todonotes
-Version:	69319
-Release:	1
+%global tl_name todonotes
+%global tl_revision 77682
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.1.7
+Release:	%{tl_revision}.1
 Summary:	Marking things to do in a LaTeX document
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/todonotes
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/todonotes.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/todonotes.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/todonotes.source.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/todonotes.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/todonotes.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/todonotes.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Requires:	texlive(pgf)
+Requires:	texlive(tools)
+Requires:	texlive(xcolor)
+Requires:	texlive(xkeyval)
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package lets the user mark things to do later, in a simple
-and visually appealing way. The package takes several options
-to enable customization/finetuning of the visual appearance.
+The package lets the user mark things to do later, in a simple and
+visually appealing way. The package takes several options to enable
+customization/finetuning of the visual appearance.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/todonotes
-%doc %{_texmfdistdir}/doc/latex/todonotes
-#- source
-%doc %{_texmfdistdir}/source/latex/todonotes
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
